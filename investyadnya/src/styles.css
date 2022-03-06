@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+ @import "~bootstrap/dist/css/bootstrap.css";
+
+ html{
+    font-family: 'Inter', sans-serif;
+ }
+ .blue-color {
+    color: #1758F5;
+ }
+ .blue-button{
+    color: white;
+    background-color: #1758F5;
+    border-radius: 3px;
+    border: none;
+ }
