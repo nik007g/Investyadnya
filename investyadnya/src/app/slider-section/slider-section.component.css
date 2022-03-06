@@ -1,0 +1,45 @@
+.heading{
+    font-weight: 900;
+    letter-spacing: 0.3px;
+    font-size: 36px;
+    color: #222;
+}
+.sub-heading{
+    margin-top: 35px;
+    font-size: 14px;
+    color: #86898c;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+.link-element{
+    list-style-type: none;
+    color: #1744b1;
+    font-size: 14px;
+    font-weight: 600;
+}
+.side-design::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    clip-path: circle(20% at 0 0);
+    background: #f2f9ff;
+}
+.side-design::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    clip-path: circle(20% at right 91%);
+    background: #f2f9ff;
+}
+
+  
