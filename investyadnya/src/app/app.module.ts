@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SliderSectionComponent } from './slider-section/slider-section.component';
+import { BrandStatsComponent } from './brand-stats/brand-stats.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SliderSectionComponent
+    SliderSectionComponent,
+    BrandStatsComponent
   ],
   imports: [
     BrowserModule,
