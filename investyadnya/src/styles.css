@@ -3,6 +3,10 @@
 
  html{
     font-family: 'Inter', sans-serif;
+    margin: 0px;
+ }
+ body{
+    margin-top: -11px;
  }
  .blue-color {
     color: #1758F5;

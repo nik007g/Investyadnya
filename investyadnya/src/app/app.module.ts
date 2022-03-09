@@ -8,19 +8,22 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SliderSectionComponent } from './slider-section/slider-section.component';
 import { BrandStatsComponent } from './brand-stats/brand-stats.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { OfferingsComponent } from './components/offerings/offerings.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SliderSectionComponent,
-    BrandStatsComponent
+    BrandStatsComponent,
+    OfferingsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

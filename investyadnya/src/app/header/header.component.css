@@ -39,3 +39,11 @@
     font-size: 14px;
     font-weight: 500;
 }
+.sticky-header{
+    position: sticky; 
+    top: 0; 
+    width: 100%; 
+    background-color: white; 
+    z-index: 10;
+    padding-top: 9px;
+}
