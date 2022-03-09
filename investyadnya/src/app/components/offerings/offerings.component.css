@@ -1,0 +1,57 @@
+.offerings-heading{
+    text-align: center;
+    margin: 75px 0px 65px;
+}
+.offerings-card{ 
+    width: 90%;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding: 25px;
+    box-shadow: 0 1px 8px 0 rgb(0 0 0 / 8%);
+}
+.active{
+    transform: translate(20px, 0px);
+    border: 1px solid #1758f5;
+    box-shadow: 0px 5px 24px 6px rgb(0 0 0 / 6%);
+    transition: all 0.3s;
+}
+.offerings-card a {
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #1758f5;
+}
+.offerings-card a:hover{
+    color: #1758f5;
+    cursor:pointer;
+}
+.offerings-card p{    
+    margin: 0px;
+    font-weight: 500;
+}
+.offerings-card .img-background{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    padding: 11px;
+    background-color: #f3f7fe;
+}
+.offerings-card .icon-align{
+    width: 45px; 
+    padding: 0px;
+    margin-top: 5px;
+}
+.main-img{
+    width: 100%;
+    box-shadow: 0px 5px 24px 6px rgb(0 0 0 / 6%);
+}
+.offerings{
+    display: table;
+}
+.offerings-col{
+    display: table-cell;
+}
+.offerings-col-center{
+    display: table-cell;
+    vertical-align: middle;
+}
