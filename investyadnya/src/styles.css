@@ -11,6 +11,9 @@
  .blue-color {
     color: #1758F5;
  }
+ .blue-color-background{
+   background-color: #1758F5;
+ }
  .blue-button{
     color: white;
     background-color: #1758F5;

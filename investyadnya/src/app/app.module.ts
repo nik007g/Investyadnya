@@ -10,13 +10,15 @@ import { SliderSectionComponent } from './slider-section/slider-section.componen
 import { BrandStatsComponent } from './brand-stats/brand-stats.component';
 import { HttpClientModule } from '@angular/common/http';
 import { OfferingsComponent } from './components/offerings/offerings.component';
+import { ResearchBasedProductsComponent } from './components/research-based-products/research-based-products.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SliderSectionComponent,
     BrandStatsComponent,
-    OfferingsComponent
+    OfferingsComponent,
+    ResearchBasedProductsComponent
   ],
   imports: [
     BrowserModule,
