@@ -11,6 +11,7 @@ import { BrandStatsComponent } from './brand-stats/brand-stats.component';
 import { HttpClientModule } from '@angular/common/http';
 import { OfferingsComponent } from './components/offerings/offerings.component';
 import { ResearchBasedProductsComponent } from './components/research-based-products/research-based-products.component';
+import { ELearningComponent } from './components/e-learning/e-learning.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { ResearchBasedProductsComponent } from './components/research-based-prod
     SliderSectionComponent,
     BrandStatsComponent,
     OfferingsComponent,
-    ResearchBasedProductsComponent
+    ResearchBasedProductsComponent,
+    ELearningComponent
   ],
   imports: [
     BrowserModule,

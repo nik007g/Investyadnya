@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon-3-Knowledge</title>
+    <g id="Icon-3-Knowledge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="book" transform="translate(14.000000, 14.000000)">
+            <path d="M33,7.00491714 C33,5.20491707 31.53,3.86991706 29.7449999,4.01991706 L29.6550007,4.01991706 C26.5050008,4.28991707 21.7199997,5.89491731 19.0499997,7.57491732 L18.7949996,7.7399168 C18.3599996,8.00991681 17.6400004,8.00991681 17.2050004,7.7399168 L16.8300004,7.51491737 C14.1600004,5.84991735 9.38999963,4.25991708 6.23999977,4.00491708 C4.45499969,3.85491708 3,5.20491672 3,6.9899168 L3,25.1099167 C3,26.5499167 4.17000005,27.899916 5.61000001,28.079916 L6.04500031,28.1399174 C9.30000043,28.5749174 14.3250005,30.2249182 17.2050004,31.7999182 L17.2650003,31.829916 C17.6700004,32.054916 18.3150004,32.054916 18.7050004,31.829916 C21.5850003,30.2399161 26.6250004,28.5749174 29.8950005,28.1399174 L30.3900003,28.079916 C31.8300003,27.899916 33,26.5499167 33,25.1099167 L33,7.00491714 Z" id="Vector" stroke="#1758F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0" fill-rule="nonzero"></path>
+            <line x1="18" y1="8.23498535" x2="18" y2="30.7349854" id="Vector" stroke="#1758F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0" fill-rule="nonzero"></line>
+            <line x1="11.625" y1="12.7349854" x2="8.25" y2="12.7349854" id="Vector" stroke="#1758F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0" fill-rule="nonzero"></line>
+            <line x1="12.75" y1="17.2349854" x2="8.25" y2="17.2349854" id="Vector" stroke="#1758F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0" fill-rule="nonzero"></line>
+            <path d="M36,0 L36,36 L0,36 L0,0 L36,0 Z" id="Vector" opacity="0" transform="translate(18.000000, 18.000000) rotate(-180.000000) translate(-18.000000, -18.000000) "></path>
+        </g>
+    </g>
+</svg>
