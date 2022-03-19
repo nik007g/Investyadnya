@@ -17,8 +17,7 @@
 }
 @keyframes border-change{
     0% {border: 3px solid transparent;}
-    100% {border: 3px solid turquoise; transition: all 0.8s ease;}
-    0% {border: 3px solid transparent;}
+    100% {border: 3px solid #1758F5;}
 }
 .whycard{
     float: left;
