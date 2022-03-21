@@ -25,6 +25,7 @@
     margin: 20px; 
     border: 3px solid transparent;    
     padding: 25px 15px;
+    transition: 4s;
 }
 .whycard:hover{
     animation-name: border-change;
@@ -39,4 +40,123 @@
 }
 .whycard-heading{
     margin-top: 20px;
+}
+.girl-section{
+    height: 800px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, rgba(252, 252, 252, 0.647), rgba(81, 81, 81, 0.2)), url(../../../assets/Images/dark-women-selective-coloring-model-wallpaper-preview.jpeg) no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;
+}
+.girl-section h2{
+    font-size: 42px;
+    color: white;
+    font-weight: 600;
+}
+.girl-section p {
+    line-height: 1.6;
+    letter-spacing: 1px;
+    color: white;
+}
+.wave{
+    position:absolute;
+    bottom: -96px;
+    left: 0;
+}
+.side-image{
+    height: 350px; width: 220px;position: relative;
+    top: 214px; left: 43px;z-index: 1;border-radius: 150px;
+}
+.side-image:hover{
+    filter: grayscale(100%);
+}
+
+
+/* ---------------- */
+.outer-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-container{
+    height: 500px;
+    width: 850px;
+    /* background-color: yellow; */
+    position: relative;
+}
+.clip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.5s;
+}
+.outer-container .main-container .clip1{
+    background-image: url(../../../assets/Images/hawa-mahal.jpeg);
+    background-size: cover;
+    clip-path: polygon(0 0, 50% 0, 0 100%, 0% 100%);
+}
+.outer-container .main-container .clip2{
+    background-image: url(../../../assets/Images/Albert-Hall-Museum-Jaipur-Ticket-Price-History-and-Timings-scaled.webp);
+    background-size: cover;
+    clip-path: polygon(50% 0, 100% 0, 50% 100%, 0 100%);
+}
+.outer-container .main-container .clip3{
+    background-image: url(../../../assets/Images/jal-mahal-jaipur-tour.jpeg);
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 50% 100%);
+}
+.outer-container .main-container:hover .clip{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+.outer-container .main-container .clip:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.content{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    height: 150px;
+    width: 70%;
+    background-color: white;
+    opacity: 0;
+    transition: ease-in 0.5s;
+}
+.clip:hover .content{
+    bottom: 0;
+    opacity: 1;
+}
+
+
+.flow{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../../assets/Images/dark-women-selective-coloring-model-wallpaper-preview.jpeg);
+    background-size: cover;
+}
+.wave2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: url(../../../assets/Images/wave.svg);
+    height: 200px;
+    animation: waveMove 5s linear infinite;
+}
+@keyframes waveMove{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 300px;
+    }
 }
