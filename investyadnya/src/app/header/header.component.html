@@ -17,6 +17,83 @@
             <li class="stockOMerter">Stock-O-Meter
                 <div class="dropdownMenu dropdownButton">
                     <div class="dropdown-header">
+                        <ul>
+                            <li> <img src="../../assets/Images/ic_stockscreener.svg"> Stock Screens</li>
+                            <li><img src="../../assets/Images/ic_stocksector.svg"> Stock Sectors</li>
+                            <li><img src="../../assets/Images/StockArticle.svg"> Stock Articles</li>
+                            <li><img src="../../assets/Images/ic_business houses.svg"> Business Houses</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-body">
+                        <div class="row body-section">
+                            <div class="col-md-4">
+                                <div style="padding:10px 10px 10px 0px">
+                                    <span class="market-cap-category">Large Cap Stocks</span>
+                                    <span class="view-all">View all ></span>
+                                </div>
+                            <div>
+                                <div style="padding:10px 10px 10px 0px" *ngFor="let row of large_cap_array">
+                                    <div class="company-section">
+                                        <span class="company-name">{{row.company.name}}</span>
+                                        <span class="cmp">₹{{row.company.close}}</span>
+                                    </div>
+                                    <div class="sector-section">
+                                        <span class="sector">Sector: &nbsp;</span>
+                                        <span class="sector-value">{{row.company.sectorMapping.mainSector}}</span>
+                                        <span class="closing-price">Closing Price</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            </div>
+                            <div class="col-md-4">
+                                <div style="padding:10px 10px 10px 0px">
+                                    <span class="market-cap-category">Mid Cap Stocks</span>
+                                    <span class="view-all">View all ></span>
+                                </div>
+                            <div>
+                                <div style="padding:10px 10px 10px 0px" *ngFor="let row of mid_cap_array">
+                                    <div class="company-section">
+                                        <span class="company-name">{{row.company.name}}</span>
+                                        <span class="cmp">₹{{row.company.close}}</span>
+                                    </div>
+                                    <div class="sector-section">
+                                        <span class="sector">Sector: &nbsp;</span>
+                                        <span class="sector-value">{{row.company.sectorMapping.mainSector}}</span>
+                                        <span class="closing-price">Closing Price</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            </div>
+                            <div class="col-md-4">
+                                <div style="padding:10px 10px 10px 0px">
+                                    <span class="market-cap-category">Small Cap Stocks</span>
+                                    <span class="view-all">View all ></span>
+                                </div>
+                            <div>
+                                <div style="padding:10px 10px 10px 0px" *ngFor="let row of small_cap_array">
+                                    <div class="company-section">
+                                        <span class="company-name">{{row.company.name}}</span>
+                                        <span class="cmp">₹{{row.company.close}}</span>
+                                    </div>
+                                    <div class="sector-section">
+                                        <span class="sector">Sector: &nbsp;</span>
+                                        <span class="sector-value">{{row.company.sectorMapping.mainSector}}</span>
+                                        <span class="closing-price">Closing Price</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>Model Portfolios
+                <div class="dropdownMenu dropdownButton">
+                    <div class="dropdown-header">
                         Hello
                     </div>
                     <div class="dropdown-body">
@@ -24,7 +101,6 @@
                     </div>
                 </div>
             </li>
-            <li>Model Portfolios</li>
             <li>Fund-O-Meter</li>
             <li>Portfolio Tracker</li>
             <li>Other Products</li>

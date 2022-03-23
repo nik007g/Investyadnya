@@ -24,9 +24,7 @@ export class AppComponent {
     this.serviceCall.getSpecificBook(371).subscribe(data=>{
       console.log(data);
     })
-    this.serviceCall.getCatchedCompanyDetails1().subscribe(data=>{
-      console.log(data);
-    })
+    
     this.serviceCall.getCompanyResearchRating(8185).subscribe(data=>{
       console.log(data);
     })
