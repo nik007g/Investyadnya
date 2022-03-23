@@ -33,11 +33,12 @@
 }
 .navigation li{
     display: inline-block;
-    padding: 0px 10px;
-    vertical-align: -webkit-baseline-middle;
+    padding: 10px 10px;
+    /* vertical-align: -webkit-baseline-middle; */
     color: white;
     font-size: 14px;
     font-weight: 500;
+    cursor: pointer;
 }
 .sticky-header{
     position: sticky; 
@@ -46,4 +47,54 @@
     background-color: white; 
     z-index: 10;
     padding-top: 9px;
+}
+
+
+/* -------------------------- */
+.dropdownMenu {
+    display: none;
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 68%;
+    height: 350px;
+    border-radius: 6px;
+    transform: translateX(-73px);
+    top: 114px;
+    box-shadow:0 1px 12px rgb(0 0 0 / 18%);
+    z-index: 1;
+    transition: all 1s;
+  }
+.dropdownButton::before{
+    position: absolute;
+    top: -12px;
+    content: '';
+    left: 110px;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #fff;
+    z-index: 10;
+}
+.stockOMerter:hover .dropdownMenu{
+    display: block;
+    animation: animate-dropdown 1s linear;
+}
+@keyframes animate-dropdown{
+    0%{opacity: 0.7;}
+    100%{opacity: 1;}
+}
+.stockOMerter:hover{
+    background-color: #1744b1;
+}
+
+.dropdown-header{
+    border-bottom: 2px solid red;
+    padding: 20px;
+    color: black;
+}
+.dropdown-body{
+    padding: 20px;
+    color: black;
 }
