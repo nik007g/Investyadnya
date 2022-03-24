@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
  @import "~bootstrap/dist/css/bootstrap.css";
  @import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900');
+ @import "../node_modules/font-awesome/css/font-awesome.min.css";
 
  html{
     font-family: 'Inter', sans-serif;

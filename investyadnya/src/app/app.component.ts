@@ -12,9 +12,7 @@ export class AppComponent {
 
   }
   ngOnInit(){
-    this.serviceCall.getDemoApi().subscribe(data=> {
-      console.log(data);
-    })
+    
     this.serviceCall.getCatchedCompanyDetails().subscribe(data=>{
       console.log(data);
     })
