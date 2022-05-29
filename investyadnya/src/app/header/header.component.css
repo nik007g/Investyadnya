@@ -280,9 +280,9 @@
   min-width: 215px;
 }
 @media screen and (max-width: 1028px) {
-  .sticky-header {
+  /* .sticky-header {
     background-color: gray;
-  }
+  } */
   .navigation {
     display: none;
   }
