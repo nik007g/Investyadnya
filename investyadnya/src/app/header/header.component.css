@@ -300,4 +300,7 @@
   .collapse-icon {
     display: block;
   }
+  .search-section{
+    display: none;
+  }
 }

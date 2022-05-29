@@ -1,64 +1,127 @@
-
-    <ngb-carousel #carouselNew [keyboard]=true [showNavigationArrows]=false [showNavigationIndicators]="true" [interval]="4000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus">
-        <ng-template ngbSlide>
-            <div style="height: 550px; margin: 0px 10% 0px 16%;">
-            <div style="display: flex;">
-                <div class="side-design"></div>
-                <img src="../../assets/Images/slide1.svg" style="height: 500px; width: 450px;"> 
-                <div style="margin-top: 8%; margin-left: 45px;">
-                    <img src="../../assets/Images/mp-logo.png" alt="Model-Portfolio" style="height: 32px;">
-                    <h1 class="heading">Ready-made portfolios to fit your investment goals</h1>
-                    <p class="sub-heading">You can now invest directly in Model Portfolio Stocks.</p>
-                    <p><li class="link-element">How it works?</li></p>
-                    <div class="row">
-                        <div class="col-md-3" style="display: flex;">
-                            <span style="font-size: 26px; font-weight: 600;">10</span>
-                            <span></span>
-                            <span style="margin: 6px; font-size: 12px;">Portfolios</span>
-                        </div>
-                        <div class="col-md-5" style="display: flex;">
-                            <span style="font-size: 26px; font-weight: 600;">200+</span>
-                            <span></span>
-                            <span style="margin: 5px;font-size: 12px;line-height: 1.4;">
-                                Premium Research Articles</span>
-                        </div>
-                    </div>
-                    <button class="blue-button-big" style="margin-top: 14px; box-shadow: 0 10px 20px -8px rgb(0 0 0 / 70%);">Know More</button>
-                </div>
+<ngb-carousel
+  #carouselNew
+  [keyboard]="true"
+  [showNavigationArrows]="false"
+  [showNavigationIndicators]="true"
+  [interval]="0"
+  [pauseOnHover]="pauseOnHover"
+  [pauseOnFocus]="pauseOnFocus"
+>
+  <!-- <ng-template ngbSlide>
+    <div class="slide-container-height">
+      <div style="margin: 0px 10% 0px 16%">
+        <div style="display: flex" class="row">
+          <div class="side-design"></div>
+          <div style="flex: 2; min-width: 300px">
+            <img
+              src="../../assets/Images/slide1.svg"
+              style="height: 500px; width: 450px"
+            />
+          </div>
+          <div style="margin-top: 8%; margin-left: 45px; flex: 2">
+            <img
+              src="../../assets/Images/mp-logo.png"
+              alt="Model-Portfolio"
+              style="height: 32px"
+            />
+            <h1 class="heading">
+              Ready-made portfolios to fit your investment goals
+            </h1>
+            <p class="sub-heading">
+              You can now invest directly in Model Portfolio Stocks.
+            </p>
+            <p><li class="link-element">How it works?</li></p>
+            <div class="row">
+              <div class="col-md-3" style="display: flex">
+                <span style="font-size: 26px; font-weight: 600">10</span>
+                <span></span>
+                <span style="margin: 6px; font-size: 12px">Portfolios</span>
+              </div>
+              <div class="col-md-5" style="display: flex">
+                <span style="font-size: 26px; font-weight: 600">200+</span>
+                <span></span>
+                <span style="margin: 5px; font-size: 12px; line-height: 1.4">
+                  Premium Research Articles</span
+                >
+              </div>
             </div>
+            <button
+              class="blue-button-big"
+              style="
+                margin-top: 14px;
+                box-shadow: 0 10px 20px -8px rgb(0 0 0 / 70%);
+              "
+            >
+              Know More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template> -->
+  <ng-template ngbSlide>
+    <div class="slide-container-height">
+      <div style="margin: 0px 10% 0px 16%">
+        <div style="display: flex" class="row">
+          <div class="side-design"></div>
+          <div style="flex: 2; min-width: 300px" class="image-box">
+            <div class="image-container">
+              <img
+                src="../../assets/Images/stock-o-meter.svg"
+                style="height: 100%; width: 100%"
+              />
+              <!-- style="height: 500px; width: 450px" -->
             </div>
-        </ng-template>
-         <ng-template ngbSlide>
-            <div style="height: 550px; margin: 0px 10% 0px 16%;">
-                <div style="display: flex;">
-                    <div class="side-design"></div>
-                    <img src="../../assets/Images/stock-o-meter.svg" style="height: 500px; width: 450px;"> 
-                    <div style="margin-top: 8%; margin-left: 45px;">
-                        <img src="../../assets/Images/Text-Stock-o-meter.png" alt="Model-Portfolio" style="height: 22px;">
-                        <div style="margin-top: 8px;">
-                            <span class="heading" style="font-weight: 400;">Analysis by</span>
-                            <span class="heading"> Yadnya's FIVE-G Framework</span>
-                        </div>
-                        <p class="sub-heading" style="width: 345px;">Equity Research Tool & Stock Fundamental Analysis using Yadnya's FIVE-G Framework</p>
-                        <div class="row" style="margin-top: 30px;">
-                            <div class="col-md-3" style="display: flex;">
-                                <span style="font-size: 26px; font-weight: 600;">225+</span>
-                                <span></span>
-                                <span style="margin: 6px; font-size: 12px;">Companies Ratings</span>
-                            </div>
-                            <div class="col-md-4" style="display: flex;">
-                                <span style="font-size: 26px; font-weight: 600;">500+</span>
-                                <span></span>
-                                <span style="margin: 5px;font-size: 12px;line-height: 1.4;">
-                                    Premium ideas & Articles</span>
-                            </div>
-                        </div>
-                        <button class="blue-button-big" style="margin-top: 14px; box-shadow: 0 10px 20px -8px rgb(0 0 0 / 70%);">Search Company</button>
-                    </div>
+          </div>
+          <div style="flex: 2" class="information-box">
+            <div>
+              <img
+                src="../../assets/Images/Text-Stock-o-meter.png"
+                alt="Model-Portfolio"
+                style="height: 22px"
+              />
+              <div style="margin-top: 8px">
+                <span class="heading" style="font-weight: 400"
+                  >Analysis by</span
+                >
+                <span class="heading"> Yadnya's FIVE-G Framework</span>
+              </div>
+              <p class="sub-heading" style="width: 345px">
+                Equity Research Tool & Stock Fundamental Analysis using Yadnya's
+                FIVE-G Framework
+              </p>
+              <div class="row" style="margin-top: 30px">
+                <div class="col-md-3" style="display: flex">
+                  <span style="font-size: 26px; font-weight: 600">225+</span>
+                  <span></span>
+                  <span style="margin: 6px; font-size: 12px"
+                    >Companies Ratings</span
+                  >
                 </div>
+                <div class="col-md-4" style="display: flex">
+                  <span style="font-size: 26px; font-weight: 600">500+</span>
+                  <span></span>
+                  <span style="margin: 5px; font-size: 12px; line-height: 1.4">
+                    Premium ideas & Articles</span
+                  >
                 </div>
-        </ng-template>
-        <!--<ng-template ngbSlide>
+              </div>
+              <button
+                class="blue-button-big"
+                style="
+                  margin-top: 14px;
+                  box-shadow: 0 10px 20px -8px rgb(0 0 0 / 70%);
+                "
+              >
+                Search Company
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+  <!--<ng-template ngbSlide>
             <p>Hey3</p>
         </ng-template> -->
-    </ngb-carousel>
+</ngb-carousel>
