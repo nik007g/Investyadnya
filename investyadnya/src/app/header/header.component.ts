@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiCallService } from '../services/api-call.service';
+import { SYMBOLS } from 'src/assets/constants';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +8,7 @@ import { ApiCallService } from '../services/api-call.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  rupee_symbol = SYMBOLS.RUPEE_SYMBOL;
   large_cap_array: any = [];
   mid_cap_array: any = [];
   small_cap_array: any[] = [];

@@ -1,31 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
- @import "~bootstrap/dist/css/bootstrap.css";
- @import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900');
- @import "../node_modules/font-awesome/css/font-awesome.min.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900");
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
 
- html{
-    font-family: 'Inter', sans-serif;
-    margin: 0px;
- }
- body{
-    margin-top: -11px;
- }
- .blue-color {
-    color: #1758F5;
- }
- .blue-color-background{
-   background-color: #1758F5;
- }
- .blue-button{
-    color: white;
-    background-color: #1758F5;
-    border-radius: 3px;
-    border: none;
- }
- .blue-button-big{
-    color: white;
-    background-color: #1758F5;
-    border-radius: 3px;
-    border: none;
-    padding: 10px 25px;
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  font-family: "Inter", sans-serif;
+  margin: 0px;
+}
+body {
+  margin-top: -11px;
+  height: 100%;
+  width: 100%;
+}
+.blue-color {
+  color: #1758f5;
+}
+.blue-color-background {
+  background-color: #1758f5;
+}
+.blue-button {
+  color: white;
+  background-color: #1758f5;
+  border-radius: 3px;
+  border: none;
+}
+.blue-button-big {
+  color: white;
+  background-color: #1758f5;
+  border-radius: 3px;
+  border: none;
+  padding: 10px 25px;
 }

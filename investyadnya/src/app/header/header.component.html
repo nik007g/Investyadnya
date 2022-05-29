@@ -1,104 +1,193 @@
 <div class="sticky-header">
-    <div class="row" style="margin:10px 35px">
-        <div class="col-md-3">
-            <a href="#"><img src="../../assets/Images/iylogo.png"> </a>    
-        </div>
-        <div class="col-md-6"> 
-            <input class="search-bar" placeholder="Search Stocks, Mutual funds, eBooks, Articles and Videos"> 
-        </div>
-        <div class="col-md-3">
-            <button style="background-color: transparent; border: none; color: #1758F5;">Offers</button>
-            <button class="blue-button login-btn">Login</button>
-            <button class="blue-button register-btn">Register</button>
-        </div>  
+  <!-- <div class="row" style="margin: 10px 35px">
+    <div class="col-md-3">
+      <a href="#"><img src="../../assets/Images/iylogo.png" /> </a>
     </div>
-    <div class="navigation" style="background-color: #1758F5; width: 100%;">
-        <ul>
-            <li class="stockOMerter">Stock-O-Meter <span style="font-size: 16px;margin-left: 8px;"><i class="fa fa-angle-down"></i></span>
-                <div class="stockOMeterDropdownMenu stockOMeterDropdownButton">
-                    <div class="dropdown-header">
-                        <ul>
-                            <li> <img src="../../assets/Images/ic_stockscreener.svg"> Stock Screens</li>
-                            <li><img src="../../assets/Images/ic_stocksector.svg"> Stock Sectors</li>
-                            <li><img src="../../assets/Images/StockArticle.svg"> Stock Articles</li>
-                            <li><img src="../../assets/Images/ic_business houses.svg"> Business Houses</li>
-                        </ul>
-                    </div>
-                    <div class="dropdown-body">
-                        <div class="row body-section">
-                            <div class="col-md-4">
-                                <div style="padding:10px 10px 10px 0px">
-                                    <span class="market-cap-category">Large Cap Stocks</span>
-                                    <span class="view-all">View all ></span>
-                                </div>
-                            <div>
-                                <div style="padding:10px 10px 10px 0px" *ngFor="let row of large_cap_array">
-                                    <div class="company-section">
-                                        <span class="company-name" title="{{row.company.name}}">{{row.company.name}}</span>
-                                        <span class="cmp">₹{{row.company.close}}</span>
-                                    </div>
-                                    <div class="sector-section">
-                                        <span class="company-name">
-                                            <span class="sector">Sector: &nbsp;</span>
-                                            <span class="sector-value" title="{{row.company.sectorMapping.mainSector}}">{{row.company.sectorMapping.mainSector}}</span>
-                                        </span>
-                                        <span class="closing-price">Closing Price</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            </div>
-                            <div class="col-md-4">
-                                <div style="padding:10px 10px 10px 0px">
-                                    <span class="market-cap-category">Mid Cap Stocks</span>
-                                    <span class="view-all">View all ></span>
-                                </div>
-                            <div>
-                                <div style="padding:10px 10px 10px 0px" *ngFor="let row of mid_cap_array">
-                                    <div class="company-section">
-                                        <span class="company-name" title="{{row.company.name}}">{{row.company.name}}</span>
-                                        <span class="cmp">₹{{row.company.close}}</span>
-                                    </div>
-                                    <div class="sector-section">
-                                        <span class="company-name">
-                                            <span class="sector">Sector: &nbsp;</span>
-                                            <span class="sector-value" title="{{row.company.sectorMapping.mainSector}}">{{row.company.sectorMapping.mainSector}}</span>
-                                        </span>
-                                        <span class="closing-price">Closing Price</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            </div>
-                            <div class="col-md-4">
-                                <div style="padding:10px 10px 10px 0px">
-                                    <span class="market-cap-category">Small Cap Stocks</span>
-                                    <span class="view-all">View all ></span>
-                                </div>
-                            <div>
-                                <div style="padding:10px 10px 10px 0px" *ngFor="let row of small_cap_array">
-                                    <div class="company-section">
-                                        <span class="company-name" title="{{row.company.name}}">{{row.company.name}}</span>
-                                        <span class="cmp">₹{{row.company.close}}</span>
-                                    </div>
-                                    <div class="sector-section">
-                                        <span class="company-name">
-                                            <span class="sector">Sector: &nbsp;</span>
-                                            <span class="sector-value" title="{{row.company.sectorMapping.mainSector}}">{{row.company.sectorMapping.mainSector}}</span>
-                                        </span>
-                                        <span class="closing-price">Closing Price</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            </div>
-                            
-                        </div>
-                    </div>
+    <div class="col-md-6">
+      <input
+        class="search-bar"
+        placeholder="Search Stocks, Mutual funds, eBooks, Articles and Videos"
+      />
+    </div>
+  </div> -->
+  <!-- <div class="col-md-3">
+      <button
+        style="background-color: transparent; border: none; color: #1758f5"
+      >
+        Offers
+      </button>
+      <button class="blue-button login-btn">Login</button>
+      <button class="blue-button register-btn">Register</button>
+    </div> -->
+
+  <div class="top-header">
+    <div style="flex: 2">
+      <a href="#"><img src="../../assets/Images/iylogo.png" /> </a>
+    </div>
+    <div style="flex: 4">
+      <input
+        class="search-bar"
+        placeholder="Search Stocks, Mutual funds, eBooks, Articles and Videos"
+      />
+    </div>
+    <div
+      style="flex: 2; display: flex; justify-content: end; align-items: center"
+    >
+      <div class="collapse-icon">
+        <i class="fa fa-bars" style="font-size: 24px; color: red"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="navigation" style="background-color: #1758f5">
+    <ul
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+      "
+    >
+      <li class="stockOMerter">
+        Stock-O-Meter
+        <span style="font-size: 16px; margin-left: 8px"
+          ><i class="fa fa-angle-down"></i
+        ></span>
+        <div class="stockOMeterDropdownMenu stockOMeterDropdownButton">
+          <div class="dropdown-header">
+            <ul>
+              <li>
+                <img src="../../assets/Images/ic_stockscreener.svg" /> Stock
+                Screens
+              </li>
+              <li>
+                <img src="../../assets/Images/ic_stocksector.svg" /> Stock
+                Sectors
+              </li>
+              <li>
+                <img src="../../assets/Images/StockArticle.svg" /> Stock
+                Articles
+              </li>
+              <li>
+                <img src="../../assets/Images/ic_business houses.svg" />
+                Business Houses
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown-body">
+            <div class="row body-section">
+              <div class="col-md-4">
+                <div style="padding: 10px 10px 10px 0px">
+                  <span class="market-cap-category">Large Cap Stocks</span>
+                  <span class="view-all">View all ></span>
                 </div>
-            </li>
-            <li>Model Portfolios <span style="font-size: 16px;margin-left: 8px;"><i class="fa fa-angle-down"></i></span>
-                <!-- <div class="dropdownMenu dropdownButton">
+                <div>
+                  <div
+                    style="padding: 10px 10px 10px 0px"
+                    *ngFor="let row of large_cap_array"
+                  >
+                    <div class="company-section">
+                      <span
+                        class="company-name"
+                        title="{{ row.company.name }}"
+                        >{{ row.company.name }}</span
+                      >
+                      <span class="cmp"
+                        >{{ rupee_symbol }}{{ row.company.close }}</span
+                      >
+                    </div>
+                    <div class="sector-section">
+                      <span class="company-name">
+                        <span class="sector">Sector: &nbsp;</span>
+                        <span
+                          class="sector-value"
+                          title="{{ row.company.sectorMapping.mainSector }}"
+                          >{{ row.company.sectorMapping.mainSector }}</span
+                        >
+                      </span>
+                      <span class="closing-price">Closing Price</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div style="padding: 10px 10px 10px 0px">
+                  <span class="market-cap-category">Mid Cap Stocks</span>
+                  <span class="view-all">View all ></span>
+                </div>
+                <div>
+                  <div
+                    style="padding: 10px 10px 10px 0px"
+                    *ngFor="let row of mid_cap_array"
+                  >
+                    <div class="company-section">
+                      <span
+                        class="company-name"
+                        title="{{ row.company.name }}"
+                        >{{ row.company.name }}</span
+                      >
+                      <span class="cmp"
+                        >{{ rupee_symbol }}{{ row.company.close }}</span
+                      >
+                    </div>
+                    <div class="sector-section">
+                      <span class="company-name">
+                        <span class="sector">Sector: &nbsp;</span>
+                        <span
+                          class="sector-value"
+                          title="{{ row.company.sectorMapping.mainSector }}"
+                          >{{ row.company.sectorMapping.mainSector }}</span
+                        >
+                      </span>
+                      <span class="closing-price">Closing Price</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div style="padding: 10px 10px 10px 0px">
+                  <span class="market-cap-category">Small Cap Stocks</span>
+                  <span class="view-all">View all ></span>
+                </div>
+                <div>
+                  <div
+                    style="padding: 10px 10px 10px 0px"
+                    *ngFor="let row of small_cap_array"
+                  >
+                    <div class="company-section">
+                      <span
+                        class="company-name"
+                        title="{{ row.company.name }}"
+                        >{{ row.company.name }}</span
+                      >
+                      <span class="cmp"
+                        >{{ rupee_symbol }}{{ row.company.close }}</span
+                      >
+                    </div>
+                    <div class="sector-section">
+                      <span class="company-name">
+                        <span class="sector">Sector: &nbsp;</span>
+                        <span
+                          class="sector-value"
+                          title="{{ row.company.sectorMapping.mainSector }}"
+                          >{{ row.company.sectorMapping.mainSector }}</span
+                        >
+                      </span>
+                      <span class="closing-price">Closing Price</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        Model Portfolios
+        <span style="font-size: 16px; margin-left: 8px"
+          ><i class="fa fa-angle-down"></i
+        ></span>
+        <!-- <div class="dropdownMenu dropdownButton">
                     <div class="dropdown-header">
                         Hello
                     </div>
@@ -106,95 +195,164 @@
                         Body
                     </div>
                 </div> -->
-            </li>
-            <li>Fund-O-Meter</li>
-            <li>Portfolio Tracker</li>
-            <li>Other Products <span style="font-size: 16px;margin-left: 8px;"><i class="fa fa-angle-down"></i></span></li>
-            <li class="eBooks">eBooks <span style="font-size: 16px;margin-left: 8px;"><i class="fa fa-angle-down"></i></span>
-                <div class="eBookDropdownMenu eBookDropdownButton">
-                    <div class="eBook-dropdown-header" style="color: black;">
-                        Search Section
-                    </div>
-                    <div class="dropdown-body">
-                        <div class="row eBook-body-section">
-                            <div class="col-md-3">
-                                <div class="eBook-col-title">
-                                    <span class="eBooks-category">Stocks</span>
-                                    <span class="total-eBooks">Total Books {{stock_books.length}}</span>
-                                </div> 
-                                <div class="eBooks-card" *ngFor="let book of stock_books">
-                                    <div style="padding:0px 5px;">
-                                        <img src={{book.thumbnailImageLink}} style="height: 30px; width: 30px;">
-                                    </div>
-                                    <div>
-                                        <span class="eBook-two-line-ellipsis" title="{{book.bookName}}">{{book.bookName}}</span>
-                                    </div>
-                                    <div class="eBook-price-align-right">
-                                        <span class="eBook-price-align">{{book.bookPrice}}</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="eBook-col-title">
-                                    <span class="eBooks-category">Mutual Fund</span>
-                                    <span class="total-eBooks">Total Books {{mf_books.length}}</span>
-                                </div> 
-                                <div class="eBooks-card" *ngFor="let book of mf_books">
-                                    <div style="padding:0px 5px;">
-                                        <img src={{book.thumbnailImageLink}} style="height: 30px; width: 30px;">
-                                    </div>
-                                    <div>
-                                        <span class="eBook-two-line-ellipsis" title="{{book.bookName}}">{{book.bookName}}</span>
-                                    </div>
-                                    <div class="eBook-price-align-right">
-                                        <span class="eBook-price-align">{{book.bookPrice}}</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="eBook-col-title">
-                                    <span class="eBooks-category">Income Tax</span>
-                                    <span class="total-eBooks">Total Books {{inc_tax_books.length}}</span>
-                                </div> 
-                                <div class="eBooks-card" *ngFor="let book of inc_tax_books">
-                                    <div style="padding:0px 5px;">
-                                        <img src={{book.thumbnailImageLink}} style="height: 30px; width: 30px;">
-                                    </div>
-                                    <div>
-                                        <span class="eBook-two-line-ellipsis" title="{{book.bookName}}">{{book.bookName}}</span>
-                                    </div>
-                                    <div class="eBook-price-align-right">
-                                        <span class="eBook-price-align">{{book.bookPrice}}</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="eBook-col-title">
-                                    <span class="eBooks-category">Financial Planning</span>
-                                    <span class="total-eBooks">Total Books {{fin_planning_books.length}}</span>
-                                </div> 
-                                <div class="eBooks-card" *ngFor="let book of fin_planning_books">
-                                    <div style="padding:0px 5px;">
-                                        <img src={{book.thumbnailImageLink}} style="height: 30px; width: 30px;">
-                                    </div>
-                                    <div>
-                                        <span class="eBook-two-line-ellipsis" title="{{book.bookName}}">{{book.bookName}}</span>
-                                    </div>
-                                    <div class="eBook-price-align-right">
-                                        <span class="eBook-price-align">{{book.bookPrice}}</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
+      </li>
+      <li>Fund-O-Meter</li>
+      <li>Portfolio Tracker</li>
+      <li>
+        Other Products
+        <span style="font-size: 16px; margin-left: 8px"
+          ><i class="fa fa-angle-down"></i
+        ></span>
+      </li>
+      <li class="eBooks">
+        eBooks
+        <span style="font-size: 16px; margin-left: 8px"
+          ><i class="fa fa-angle-down"></i
+        ></span>
+        <div class="eBookDropdownMenu eBookDropdownButton">
+          <div class="eBook-dropdown-header" style="color: black">
+            Search Section
+          </div>
+          <div class="dropdown-body">
+            <div class="row eBook-body-section">
+              <div class="col-md-3 ebook-col">
+                <div class="eBook-col-title">
+                  <span
+                    class="eBooks-category book-header-ellipsis"
+                    title="Stocks"
+                    >Stocks</span
+                  >
+                  <span class="total-eBooks"
+                    >Total Books {{ stock_books.length }}</span
+                  >
                 </div>
-            </li>
-            <li>e-Learnin</li>
-            <li>Pricing</li>
-            <li>Articles</li>
-        </ul>
-    </div>
+                <div class="eBooks-card" *ngFor="let book of stock_books">
+                  <div style="padding: 0px 5px">
+                    <img
+                      src="{{ book.thumbnailImageLink }}"
+                      style="height: 30px; width: 30px"
+                    />
+                  </div>
+                  <div>
+                    <span
+                      class="eBook-two-line-ellipsis"
+                      title="{{ book.bookName }}"
+                      >{{ book.bookName }}</span
+                    >
+                  </div>
+                  <div class="eBook-price-align-right">
+                    <span class="eBook-price-align"
+                      >{{ rupee_symbol }}{{ book.bookPrice }}</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 ebook-col">
+                <div class="eBook-col-title">
+                  <span
+                    class="eBooks-category book-header-ellipsis"
+                    title="Mutual Fund"
+                    >Mutual Fund</span
+                  >
+                  <span class="total-eBooks"
+                    >Total Books {{ mf_books.length }}</span
+                  >
+                </div>
+                <div class="eBooks-card" *ngFor="let book of mf_books">
+                  <div style="padding: 0px 5px">
+                    <img
+                      src="{{ book.thumbnailImageLink }}"
+                      style="height: 30px; width: 30px"
+                    />
+                  </div>
+                  <div>
+                    <span
+                      class="eBook-two-line-ellipsis"
+                      title="{{ book.bookName }}"
+                      >{{ book.bookName }}</span
+                    >
+                  </div>
+                  <div class="eBook-price-align-right">
+                    <span class="eBook-price-align"
+                      >{{ rupee_symbol }}{{ book.bookPrice }}</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 ebook-col">
+                <div class="eBook-col-title">
+                  <span
+                    class="eBooks-category book-header-ellipsis"
+                    title="Income Tax"
+                    >Income Tax</span
+                  >
+                  <span class="total-eBooks"
+                    >Total Books {{ inc_tax_books.length }}</span
+                  >
+                </div>
+                <div class="eBooks-card" *ngFor="let book of inc_tax_books">
+                  <div style="padding: 0px 5px">
+                    <img
+                      src="{{ book.thumbnailImageLink }}"
+                      style="height: 30px; width: 30px"
+                    />
+                  </div>
+                  <div>
+                    <span
+                      class="eBook-two-line-ellipsis"
+                      title="{{ book.bookName }}"
+                      >{{ book.bookName }}</span
+                    >
+                  </div>
+                  <div class="eBook-price-align-right">
+                    <span class="eBook-price-align"
+                      >{{ rupee_symbol }}{{ book.bookPrice }}</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 ebook-col">
+                <div class="eBook-col-title">
+                  <span
+                    class="eBooks-category book-header-ellipsis"
+                    title="Financial Planning"
+                    >Financial Planning</span
+                  >
+                  <span class="total-eBooks"
+                    >Total Books {{ fin_planning_books.length }}</span
+                  >
+                </div>
+                <div
+                  class="eBooks-card"
+                  *ngFor="let book of fin_planning_books"
+                >
+                  <div style="padding: 0px 5px">
+                    <img
+                      src="{{ book.thumbnailImageLink }}"
+                      style="height: 30px; width: 30px"
+                    />
+                  </div>
+                  <div>
+                    <span
+                      class="eBook-two-line-ellipsis"
+                      title="{{ book.bookName }}"
+                      >{{ book.bookName }}</span
+                    >
+                  </div>
+                  <div class="eBook-price-align-right">
+                    <span class="eBook-price-align"
+                      >{{ rupee_symbol }}{{ book.bookPrice }}</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>e-Learnin</li>
+      <li>Pricing</li>
+      <li>Articles</li>
+    </ul>
+  </div>
 </div>
-
-

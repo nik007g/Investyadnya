@@ -1,246 +1,303 @@
-.login-btn{
-    margin: 5px 20px;
-    font-size: 17px;
-    height: 31px;
-    padding: 0px 15px;
+.login-btn {
+  margin: 5px 20px;
+  font-size: 17px;
+  height: 31px;
+  padding: 0px 15px;
 }
-.register-btn{
-    font-size: 17px;
-    height: 31px;
-    padding: 0px 15px;
+.collapse-section {
+  flex: 2;
+  display: none;
 }
-.search-bar{
-    width: 80%;
-    margin: 6px 8%;
-    border: 1px solid #cfd8dc;
-    border-radius: 3px;
-    height: 32px;
-    font-size: 14px;
+.top-header {
+  margin: 0px 35px;
+  display: flex;
+  padding: 10px 0px;
 }
-.search-bar:focus{
-    outline: none;
-    border: 0.5px solid #1758F5 !important;
-
+.register-btn {
+  font-size: 17px;
+  height: 31px;
+  padding: 0px 15px;
 }
-.search-bar:hover{
-    border: 0.5px solid #1758F5;
+.search-bar {
+  width: 80%;
+  margin: 0px 8%;
+  border: 1px solid #cfd8dc;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 9px 16px;
 }
-.navigation ul{
-    text-decoration: none;
-    list-style-type: none;
-    width: 1170px;
-    margin: auto;
+.search-bar:focus {
+  outline: none;
+  border: 0.5px solid #1758f5 !important;
 }
-.navigation li{
-    display: inline-block;
-    padding: 10px 10px;
-    /* vertical-align: -webkit-baseline-middle; */
-    color: white;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
+.search-bar:hover {
+  border: 0.5px solid #1758f5;
 }
-.sticky-header{
-    position: sticky; 
-    top: 0; 
-    width: 100%; 
-    background-color: white; 
-    z-index: 10;
-    padding-top: 9px;
+.navigation ul {
+  text-decoration: none;
+  list-style-type: none;
+  width: 100%;
+  margin: auto;
 }
-
+.navigation li {
+  display: inline-block;
+  padding: 10px 10px;
+  /* vertical-align: -webkit-baseline-middle; */
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.sticky-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+  padding-top: 9px;
+}
 
 /* -------------------------- */
 .stockOMeterDropdownMenu {
-    display: none;
-    content: '';
-    position: absolute;
-    background-color: #fff;
-    width: 80%;
-    height: 520px;
-    border-radius: 6px;
-    transform: translateX(-73px);
-    top: 117px;
-    box-shadow:0 1px 12px rgb(0 0 0 / 18%);
-    z-index: 1;
-    transition: all 1s;
-  }
-.stockOMeterDropdownButton::before{
-    position: absolute;
-    top: -12px;
-    content: '';
-    left: 110px;
-    width: 0;
-    height: 0;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid #fff;
-    z-index: 10;
+  display: none;
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  /* width: 80%; */
+  height: 520px;
+  border-radius: 6px;
+  transform: translateX(-73px);
+  top: 117px;
+  box-shadow: 0 1px 12px rgb(0 0 0 / 18%);
+  z-index: 1;
+  transition: all 1s;
+}
+.stockOMeterDropdownButton::before {
+  position: absolute;
+  top: -12px;
+  content: "";
+  left: 110px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #fff;
+  z-index: 10;
 }
 .eBookDropdownMenu {
-    display: none;
-    content: '';
-    position: absolute;
-    background-color: #fff;
-    width: 85%;
-    height: 520px;
-    border-radius: 6px;
-    transform: translateX(-60%);
-    top: 117px;
-    box-shadow:0 1px 12px rgb(0 0 0 / 18%);
-    z-index: 1;
-    transition: all 1s;
+  display: none;
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 76%;
+  height: 520px;
+  border-radius: 6px;
+  transform: translateX(-60%);
+  top: 117px;
+  box-shadow: 0 1px 12px rgb(0 0 0 / 18%);
+  z-index: 1;
+  transition: all 1s;
+}
+.eBookDropdownButton::before {
+  position: absolute;
+  top: -12px;
+  content: "";
+  left: 61%;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #fff;
+  z-index: 10;
+}
+.stockOMerter:hover .stockOMeterDropdownMenu {
+  display: block;
+  animation: animate-dropdown 1s linear;
+}
+.eBooks:hover .eBookDropdownMenu {
+  display: block;
+  animation: animate-dropdown 1s linear;
+}
+@keyframes animate-dropdown {
+  0% {
+    opacity: 0.7;
   }
-.eBookDropdownButton::before{
-    position: absolute;
-    top: -12px;
-    content: '';
-    left: 61%;
-    width: 0;
-    height: 0;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid #fff;
-    z-index: 10;
+  100% {
+    opacity: 1;
+  }
 }
-.stockOMerter:hover .stockOMeterDropdownMenu{
-    display: block;
-    animation: animate-dropdown 1s linear;
-}
-.eBooks:hover .eBookDropdownMenu{
-    display: block;
-    animation: animate-dropdown 1s linear;
-}
-@keyframes animate-dropdown{
-    0%{opacity: 0.7;}
-    100%{opacity: 1;}
-}
-.stockOMerter:hover{
-    background-color: #1744b1;
+.stockOMerter:hover {
+  background-color: #1744b1;
 }
 
-.dropdown-header{
-    border-bottom: 2px solid #e9e9e9;
-    padding: 10px;
+.dropdown-header {
+  border-bottom: 2px solid #e9e9e9;
+  padding: 10px;
 }
-.dropdown-header ul li{
-    color: #727175;
-    font-size: 14px;
-    font-weight: 600;
-    padding-right: 22px;
+.dropdown-header ul li {
+  color: #727175;
+  font-size: 14px;
+  font-weight: 600;
+  padding-right: 22px;
 }
-.dropdown-header ul{
-    width: 100%;
+.dropdown-header ul {
+  width: 100%;
 }
-.dropdown-body{
-    padding: 20px;
-    color: black;
+.dropdown-body {
+  padding: 20px;
+  color: black;
 }
-.dropdown-body .body-section{
-    height: 414px;
-    overflow-y: scroll;
-}
-
-.company-section{
-    margin: 0px;
-    padding-bottom: 3px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #000;
-    line-height: 16px;
-}
-.company-name{
-    width: 54%;
-    text-overflow: ellipsis;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-}
-.cmp{
-    float: right;
-}
-.company-sector{
-    margin: 0px;
-}
-.sector{
-    color: #696a6d;
-}
-.sector-value{
-    color: #4276a9;
-}
-.closing-price{
-    float: right;
-    color: #696a6d;
-}
-.market-cap-category{
-    color: #696a6d;
-    font-size: 14px;
-    font-weight: 600;
-}
-.view-all{
-    float: right;
-    color: #1758F5;
+.dropdown-body .body-section {
+  height: 414px;
+  overflow-y: scroll;
 }
 
-.eBook-dropdown-header{
-    padding: 10px;
+.company-section {
+  margin: 0px;
+  padding-bottom: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  line-height: 16px;
 }
-.eBook-dropdown-body{
-    padding: 20px;
-    color: black;
+.company-name {
+  width: 54%;
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.eBook-body-section{
-    height: 414px;
-    overflow-y: scroll;
+.book-header-ellipsis {
+  width: 50%;
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.eBook-two-line-ellipsis{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    padding: 0px 7px;
-    font-weight: 400;
+.cmp {
+  float: right;
 }
-.eBook-col-title{
-    border-bottom: 1px solid rgba(97, 109, 126, .12);
-    transition: 2s all;
-    padding-bottom: 8px;
+.company-sector {
+  margin: 0px;
 }
-.eBook-col-title:hover{
-    animation: border-animation 2s;
+.sector {
+  color: #696a6d;
+}
+.sector-value {
+  color: #4276a9;
+}
+.closing-price {
+  float: right;
+  color: #696a6d;
+}
+.market-cap-category {
+  color: #696a6d;
+  font-size: 14px;
+  font-weight: 600;
+}
+.view-all {
+  float: right;
+  color: #1758f5;
+}
+
+.eBook-dropdown-header {
+  padding: 10px;
+}
+.eBook-dropdown-body {
+  padding: 20px;
+  color: black;
+}
+.eBook-body-section {
+  height: 414px;
+  overflow-y: scroll;
+}
+.eBook-two-line-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  padding: 0px 7px;
+  font-weight: 400;
+}
+.eBook-col-title {
+  border-bottom: 1px solid rgba(97, 109, 126, 0.12);
+  transition: 2s all;
+  padding-bottom: 8px;
+}
+.eBook-col-title:hover {
+  animation: border-animation 2s;
+  border-bottom: 2px solid #48c7ec !important;
+}
+@keyframes border-animation {
+  0% {
+    left: 0;
     border-bottom: 2px solid #48c7ec !important;
+  }
+  100% {
+    right: 0;
+    border-bottom: 2px solid #48c7ec !important;
+  }
 }
-@keyframes border-animation{
-    0%{left: 0; border-bottom: 2px solid #48c7ec !important;}
-    100%{right:0; border-bottom: 2px solid #48c7ec !important;}
+.total-eBooks {
+  float: right;
+  color: #337ab7;
+  font-weight: 600;
+  cursor: auto;
 }
-.total-eBooks{
-    float: right;
-    color: #337ab7;
-    font-weight: 600;
+.eBooks-category {
+  font-weight: 600;
 }
-.eBooks-category{
-    font-weight: 600;
+.eBook-col-title:hover .eBooks-category {
+  color: #48c7ec;
 }
-.eBook-col-title:hover .eBooks-category{
-    color: #48c7ec;
-}
-.eBook-body-section .col-md-3:nth-child(odd) .eBooks-card{
-    background-color: #f2f8ff;
+.eBook-body-section .col-md-3:nth-child(odd) .eBooks-card {
+  background-color: #f2f8ff;
 }
 
-.eBooks-card{
-    display: flex; padding: 10px 8px 10px 0px;border-bottom: 1px solid rgba(97, 109,126, .12);
+.eBooks-card {
+  display: flex;
+  padding: 10px 8px 10px 0px;
+  border-bottom: 1px solid rgba(97, 109, 126, 0.12);
 }
-.eBook-price-align-right{
-    float: right;
+.eBook-price-align-right {
+  float: right;
+  align-items: center;
+  display: flex;
 }
-.eBook-price-align{
-    width: 50px;
-    padding: 0px 2px;
-    color: #528fc3;
-    font-weight: 600;
-    font-size: 12px;
-    float: right;
+.eBook-price-align {
+  padding: 0px 2px;
+  color: #528fc3;
+  font-weight: 600;
+  font-size: 12px;
+  float: right;
+}
+.collapse-icon {
+  display: none;
+}
+.ebook-col {
+  flex: 2;
+  min-width: 215px;
+}
+@media screen and (max-width: 1028px) {
+  .sticky-header {
+    background-color: gray;
+  }
+  .navigation {
+    display: none;
+  }
+  .top-header {
+    margin: 0px 35px;
+    display: flex;
+    padding: 20px 0px;
+  }
+  .collapse-section {
+    flex: 2;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .collapse-icon {
+    display: block;
+  }
 }

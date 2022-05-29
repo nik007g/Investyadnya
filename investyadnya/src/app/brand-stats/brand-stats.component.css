@@ -1,4 +1,9 @@
-.stats-heading{
-    font-size: 32px;
-    font-weight: 600; 
+.stats-heading {
+  font-size: 32px;
+  font-weight: 600;
+}
+.stats-container {
+  flex: 2;
+  padding: 20px 0px;
+  min-width: 200px;
 }

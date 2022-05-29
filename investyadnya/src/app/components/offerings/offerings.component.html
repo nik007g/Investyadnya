@@ -1,64 +1,100 @@
 <div>
-    <h1 class="offerings-heading">
-        Our Offerings
-    </h1>
-    <div class="row offerings" style="margin: 0px 9%; height: fit-content;">
-        <div class="col-md-6 offerings-col">
-            <div class="offerings-card" (click)="cardClick($event);" >
-                <div class="row" (click)="$event.stopPropagation()">
-                    <div class="col-md-2 icon-align">
-                        <div class="img-background">
-                            <img src="../../../assets/Images/personalized-fp.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-10">
-                        <a href="#">Personalized Financial Planning <img src="../../../assets/Images/right-angle-learnmore.svg"></a>
-                        <p>Smart Planning of all your investments to outperform your financial goals</p>
-                    </div>
-                </div>
+  <h1 class="offerings-heading">Our Offerings</h1>
+  <div
+    class="row offerings"
+    style="margin: 0px 9%; height: fit-content; display: flex"
+  >
+    <div class="col-md-6 offerings-col">
+      <div class="offerings-card" (click)="cardClick($event)">
+        <div class="row" (click)="$event.stopPropagation()">
+          <div class="col-md-2 icon-align">
+            <div class="img-background">
+              <img src="../../../assets/Images/personalized-fp.svg" alt="" />
             </div>
-            <div class="offerings-card" (click)="cardClick($event);">
-                <div class="row" (click)="$event.stopPropagation()">
-                    <div class="col-md-2 icon-align">
-                        <div class="img-background">
-                            <img src="../../../assets/Images/reasearched-prod-icon.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-10">
-                        <a href="#">Research Based Products <img src="../../../assets/Images/right-angle-learnmore.svg"></a>
-                        <p>Wide range of well reseached and value packed products for your financial goals</p>
-                    </div>
-                </div>
-            </div>
-            <div class="offerings-card" (click)="cardClick($event);">
-                <div class="row" (click)="$event.stopPropagation()">
-                    <div class="col-md-2 icon-align">
-                        <div class="img-background">
-                            <img src="../../../assets/Images/accordian-active-block.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-10">
-                        <a href="#">eBooks <img src="../../../assets/Images/right-angle-learnmore.svg"></a>
-                        <p>Detailed reports on stocks, mutual funds & other necessary financial information</p>
-                    </div>
-                </div>
-            </div>
-            <div class="offerings-card" (click)="cardClick($event);">
-                <div class="row" (click)="$event.stopPropagation()">
-                    <div class="col-md-2 icon-align">
-                        <div class="img-background">
-                            <img src="../../../assets/Images/personalized-fp (1).svg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-10">
-                        <a href="#">e-Learning <img src="../../../assets/Images/right-angle-learnmore.svg"></a>
-                        <p>Financial learnings made easier now, access from wherever yoy are!</p>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div class="col-md-10">
+            <a href="#"
+              >Personalized Financial Planning
+              <img src="../../../assets/Images/right-angle-learnmore.svg"
+            /></a>
+            <p>
+              Smart Planning of all your investments to outperform your
+              financial goals
+            </p>
+          </div>
         </div>
-        <div class="col-md-6 offerings-col-center">
-            <img src="../../../assets/Images/perfinplanning@1x.webp" class="justify-content-center align-items-center main-img">
+      </div>
+      <div class="offerings-card" (click)="cardClick($event)">
+        <div class="row" (click)="$event.stopPropagation()">
+          <div class="col-md-2 icon-align">
+            <div class="img-background">
+              <img
+                src="../../../assets/Images/reasearched-prod-icon.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-10">
+            <a href="#"
+              >Research Based Products
+              <img src="../../../assets/Images/right-angle-learnmore.svg"
+            /></a>
+            <p>
+              Wide range of well reseached and value packed products for your
+              financial goals
+            </p>
+          </div>
         </div>
+      </div>
+      <div class="offerings-card" (click)="cardClick($event)">
+        <div class="row" (click)="$event.stopPropagation()">
+          <div class="col-md-2 icon-align">
+            <div class="img-background">
+              <img
+                src="../../../assets/Images/accordian-active-block.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-10">
+            <a href="#"
+              >eBooks
+              <img src="../../../assets/Images/right-angle-learnmore.svg"
+            /></a>
+            <p>
+              Detailed reports on stocks, mutual funds & other necessary
+              financial information
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="offerings-card" (click)="cardClick($event)">
+        <div class="row" (click)="$event.stopPropagation()">
+          <div class="col-md-2 icon-align">
+            <div class="img-background">
+              <img
+                src="../../../assets/Images/personalized-fp (1).svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-10">
+            <a href="#"
+              >e-Learning
+              <img src="../../../assets/Images/right-angle-learnmore.svg"
+            /></a>
+            <p>
+              Financial learnings made easier now, access from wherever yoy are!
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="col-md-6 offerings-col-center">
+      <img
+        src="../../../assets/Images/perfinplanning@1x.webp"
+        class="justify-content-center align-items-center main-img"
+      />
+    </div>
+  </div>
 </div>
