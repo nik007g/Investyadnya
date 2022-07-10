@@ -294,13 +294,13 @@
   .collapse-section {
     flex: 2;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .collapse-icon {
     display: block;
   }
-  .search-section{
+  .search-section {
     display: none;
   }
 }
